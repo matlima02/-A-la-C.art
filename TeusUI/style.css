@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(213, 210, 201);
+    margin-left: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: rgb(13, 16, 16);
+    z-index: 2;
+}
+
+.nav .container {
+    position: absolute;
+    top: 5.5%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.home {
+    height: 100vh;
+}
+
+.home .h1 {
+    font-size: 4rem;
+}
+
+.home .sliding-text {
+    color: rgb(213, 210, 201);
+
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(213, 210, 201);
+}
+
+.cena::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(213, 210, 201);
+    transition: width 0.3s;
+}
+
+.cena:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.logo {
+    position: absolute;
+    color: rgb(213, 210, 201);
+    left: 50%;
+    top: 50%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%) scale(6);
+}
+
+.first-page {
+    height: 130vh;
+    position: relative;
+    background: rgb(30, 30, 30);
+    color: rgb(213, 210, 201);
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    text-align: left;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.first-page img {
+    height: 100%;
+}
+
+.second-page {
+    height: 100vh;
+    background: rgb(35, 35, 35);
+    color: rgb(213, 210, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 5;
+}
+
+.second-page img {
+    height: 95%;
+}
+
+/*Mobile and Ipad*/
+@media(max-device-width: 1000px) {
+    .first-page img{
+        height: 55%;
+    }
+    .first-page{
+        height: 50vh;
+        font-size: small;
+    }
+    .home{
+        height: 100vh;
+    }
+    .body {
+        font-weight: 300;
+    }
+    .second-page{
+        height: 40vh;
+        position: relative;
+        font-size: small;
+        padding-right: 1rem;
+
+    }
+    .second-page img {
+        height: 60%;
+    }
+    nav {
+        padding: 1rem 7rem;
+    }
+}
+
+
+
+
+
+
+
