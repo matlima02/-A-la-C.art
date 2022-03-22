@@ -1,6 +1,6 @@
 let particles = [];
 let noiseScale = 0.01;
-let number = 5000;
+let number = 800;
 
 function setup() {
     let canv = createCanvas(windowWidth, windowHeight);
